@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volcano Download Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: white;
+      position: relative;
+      height: 100vh;
+      margin: 0;
+    }
+    a.btn {
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 18px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    a.btn:hover {
+      background-color: darkred;
+    }
+    .corner {
+      position: absolute;
+      font-size: 40px;
+    }
+    .top-left { top: 10px; left: 10px; }
+    .top-right { top: 10px; right: 10px; }
+    .bottom-left { bottom: 10px; left: 10px; }
+    .bottom-right { bottom: 10px; right: 10px; }
+    .footer {
+      margin-top: 60px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .download-text {
+      font-size: 18px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Four corner emojis -->
+  <div class="corner top-left">🌋</div>
+  <div class="corner top-right">🌋</div>
+  <div class="corner bottom-left">🌋</div>
+  <div class="corner bottom-right">🌋</div>
+
+  <h1>Welcome to Volcano Download Page 🌋</h1>
+
+  <!-- Discord button -->
+  <a class="btn" href="https://discord.gg/JMj8pZdZZm" target="_blank">
+    Join Our Discord
+  </a>
+
+  <!-- Download section -->
+  <p class="download-text">Download VOLCANO.zip from here 🌋</p>
+  <a class="btn" href="https://github.com/ska7774pcska-bot/volcano.rar/raw/main/volcano.zip.rar" download="VOLCANO.rar">
+    ⬇ Download VOLCANO
+  </a>
+
+  <!-- Footer -->
+  <p class="footer">If you have any problem, just join our Discord: JOIN DISCORD TO MAKE IT EASIER 🤖</p>
+
+</body>
+</html>
